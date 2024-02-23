@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-gray-900;
+}
+
+p,
+input,
+button,
+span,
+img {
+  @apply text-sm lg:text-base;
+}
+
+button {
+  @apply flex;
+}
+button > svg {
+  @apply text-lg lg:text-xl transition-colors duration-300;
+}
+button:hover > svg {
+  @apply text-green-500;
+}
+
+.icon-input {
+  @apply px-4 py-[6px] lg:py-2 rounded-full border-gray-100 border-2 w-full;
+}
+.icon-input > input {
+  @apply outline-none w-full;
+}
+.icon-input > svg {
+  @apply text-lg lg:text-xl;
+}
+.icon-input:focus-within {
+  @apply outline-green-500 outline-2 outline;
+}
+
+h1 {
+  @apply font-extrabold text-2xl lg:text-4xl;
+}
+h2 {
+  @apply font-bold text-xl lg:text-3xl;
+}
+h3 {
+  @apply font-semibold text-lg lg:text-2xl;
+}
+h4 {
+  @apply font-medium text-base lg:text-xl;
+}
+h5 {
+  @apply font-medium text-sm lg:text-lg;
+}
+h6 {
+  @apply font-medium text-sm lg:text-base;
+}
+
+.layout {
+  @apply px-4 py-2 md:py-4 md:px-[4rem] lg:px-[8rem];
+}
